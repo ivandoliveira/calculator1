@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Calculator</title>
 </head>
 <body>
@@ -12,7 +17,7 @@
         <form action="" name="Calculator">
             <input type="text" class="result" name="result" disabled> <br>
 
-            <input type="button" class="btn" name="btnC" value="C" onclick="location.reload()"> <br>
+            <input type="button" class="btn btnC" name="btnC" value="C" onclick="location.reload()"> <br>
             
 
             <input type="button" class="btn" name="btn9" value="9" onclick="displaynum(btn9.value)">

@@ -1,29 +1,78 @@
-@media screen and (max-width: 360px) {
 
-    .main {
-        background: rgba(194, 211, 214, 100%)
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        
+        background: rgba(194, 211, 214, 100%);
+       
     }
 
+    form{
+
+        display:flex;
+        flex-flow: row wrap;
+
+        display: inline-block;
+        
+    }
+
+    .result{
+        width: 340px;
+        height: 249px;
+
+        margin: 30px auto 30px auto;
+
+        background-color: rgba(245, 245, 245, 1);
+
+        font-size: 5em;
+
+        border-radius: 6px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.20);
+    }
+
+    
     .btn {
         
+
         width: 77px;
         height: 78px;
-        
-        
+
+        margin: 2px auto;
+
+        border: none;
+        border-radius: 6px;
+
         background-color: rgba(54, 184, 192, 100%);
-        
         background-image: linear-gradient(to top, rgba(16, 15, 15, 0.25), rgba(255, 255, 255, 0) );        
 
-        color: #ffffff;
-        font-size: 36px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.20);
+
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.5em;
+        color: whitesmoke;
+
     }
 
-    .btnOperator {
+    .btnOperator{
+
         width: 77px;
         height: 78px;
-        font-size: 36px;
-    }
 
+        border: none;
+        border-radius: 6px;
+
+        background-color: rgba(0, 114, 139, 100%);
+        background-image: linear-gradient(to top, rgba(16, 15, 15, 0.25), rgba(255, 255, 255, 0) );        
+
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.20);
+
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        color: whitesmoke;
+    }
+   
     
 }
   
