@@ -17,28 +17,32 @@
         <form action="" name="Calculator">
             <input type="text" class="result" name="result" disabled> <br>
 
-            <input type="button" class="btn btnC" name="btnC" value="C" onclick="location.reload()"> <br>
-            
+            <div class="containerBtnArea">
+                <section class="btnArea">
+                    <input type="button" class="btn btnC" name="btnC" value="C" onclick="location.reload()"> <br>
+                
 
-            <input type="button" class="btn" name="btn9" value="9" onclick="displaynum(btn9.value)">
-            <input type="button" class="btn" name="btn8" value="8" onclick="displaynum(btn8.value)">
-            <input type="button" class="btn" name="btn7" value="7" onclick="displaynum(btn7.value)">
-            <input type="button" class="btnOperator" name="btnDiv" value="/" onclick="displaynum(btnDiv.value)"> <br>
-
-            <input type="button" class="btn" name="btn6" value="6" onclick="displaynum(btn6.value)">
-            <input type="button" class="btn" name="btn5" value="5" onclick="displaynum(btn5.value)">
-            <input type="button" class="btn" name="btn4" value="4" onclick="displaynum(btn4.value)">
-            <input type="button" class="btnOperator" name="btnMulti" value="*" onclick="displaynum(btnMulti.value)"> <br>
-
-            <input type="button" class="btn" name="btn3" value="3" onclick="displaynum(btn3.value)">
-            <input type="button" class="btn" name="btn2" value="2" onclick="displaynum(btn2.value)">
-            <input type="button" class="btn" name="btn1" value="1" onclick="displaynum(btn1.value)">
-            <input type="button" class="btnOperator" name="btnSub" value="-" onclick="displaynum(btnSub.value)"> <br>
-
-            <input type="button" class="btn" name="btn0" value="0" onclick="displaynum(btn0.value)">
-            <input type="button" class="btn" name="btnDot" value="." onclick="displaynum(btnDot.value)">
-            <input type="button" class="btnOperator" name="btnEqual" value="=" onclick="result.value=eval (result.value)">
-            <input type="button" class="btnOperator" name="btnAdd" value="+" onclick="displaynum(btnAdd.value)"> <br>
+                    <input type="button" class="btn" name="btn9" value="9" onclick="displaynum(btn9.value)">
+                    <input type="button" class="btn" name="btn8" value="8" onclick="displaynum(btn8.value)">
+                    <input type="button" class="btn" name="btn7" value="7" onclick="displaynum(btn7.value)">
+                    <input type="button" class="btnOperator" name="btnDiv" value="/" onclick="displaynum(btnDiv.value)"> <br>
+    
+                    <input type="button" class="btn" name="btn6" value="6" onclick="displaynum(btn6.value)">
+                    <input type="button" class="btn" name="btn5" value="5" onclick="displaynum(btn5.value)">
+                    <input type="button" class="btn" name="btn4" value="4" onclick="displaynum(btn4.value)">
+                    <input type="button" class="btnOperator" name="btnMulti" value="*" onclick="displaynum(btnMulti.value)"> <br>
+    
+                    <input type="button" class="btn" name="btn3" value="3" onclick="displaynum(btn3.value)">
+                    <input type="button" class="btn" name="btn2" value="2" onclick="displaynum(btn2.value)">
+                    <input type="button" class="btn" name="btn1" value="1" onclick="displaynum(btn1.value)">
+                    <input type="button" class="btnOperator" name="btnSub" value="-" onclick="displaynum(btnSub.value)"> <br>
+    
+                    <input type="button" class="btn" name="btn0" value="0" onclick="displaynum(btn0.value)">
+                    <input type="button" class="btn" name="btnDot" value="." onclick="displaynum(btnDot.value)">
+                    <input type="button" class="btnOperator" name="btnEqual" value="=" onclick="result.value=eval (result.value)">
+                    <input type="button" class="btnOperator" name="btnAdd" value="+" onclick="displaynum(btnAdd.value)"> <br>
+                </section>
+            </div>
 
         </form>
     </div>
