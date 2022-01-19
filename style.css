@@ -9,6 +9,7 @@
 
     /* Com essa definições foi possível ventralizar a area os botões*/
     div.containerBtnArea { 
+        margin-top: 25%;
         width: 100vw;
         height: auto;
         display: flex;
@@ -17,12 +18,19 @@
         align-items: center;
       
     }
-    
-    
+
+   .btnArea{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        justify-items: center;
+    }
 
     .result {
-        display: block;
-
+       
+        grid-column: 1/5;
+        justify-self: center;
+        
         width: 340px;
         height: 249px;
 
@@ -31,13 +39,35 @@
         background-color: rgba(245, 245, 245, 1);
 
         font-size: 5em;
+        font-family: 'Roboto', sans-serif;
 
         border-radius: 6px;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.20);
     }
 
+    .row1{
+        grid-column: 1/5;
+    }
+
+    .row2{
+        grid-column: 1/5;
+    }
+
+    .row3{
+        grid-column: 1/5;
+    }
+
+    .row4{
+        grid-column: 1/5;
+    }
+
+    .row5{
+        grid-column: 1/5;
+    }
+
+
     .btn {
-        
+       
         width: 77px;
         height: 78px;
 
