@@ -4,65 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
-
+    
     <link rel="stylesheet" href="normalize.css"/>
     <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="style.css" />
-
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Calculator</title>
 </head>
 <body>
-    <div class="main">
+    <section class="main">
         <form action="" name="Calculator">
             
-
-            <div class="containerBtnArea">
-                <section class="btnArea">
-
+            <div class="container_btn_area">
+                <section class="btn_area">
                     
                     <input type="text" class="result" name="result" disabled> <br>
-                    
 
-                    <div class="row1">
-                        <input type="button" class="btn btnC" name="btnC" value="C" onclick="location.reload()"> <br>
+                    <div class="container_row">
+                        <div class="row1">
+                            <input type="button" class="btn btn_c" name="btnC" value="C" onclick="location.reload()">
+                        </div>
+                        
+                        <div class="row2">
+                            <input type="button" class="btn" name="btn_9" value="9" onclick="displaynum(btn_9.value)">
+                            <input type="button" class="btn" name="btn_8" value="8" onclick="displaynum(btn_8.value)">
+                            <input type="button" class="btn" name="btn_7" value="7" onclick="displaynum(btn_7.value)">
+                            <input type="button" class="btn_operator" name="btn_div" value="/" onclick="displaynum(btn_div.value)"> <br>
+                        </div>
+                        
+                        <div class="row3">
+                            <input type="button" class="btn" name="btn_6" value="6" onclick="displaynum(btn_6.value)">
+                            <input type="button" class="btn" name="btn_5" value="5" onclick="displaynum(btn_5.value)">
+                            <input type="button" class="btn" name="btn_4" value="4" onclick="displaynum(btn_4.value)">
+                            <input type="button" class="btn_operator" name="btn_multi" value="*" onclick="displaynum(btn_multi.value)"> <br>
+                        </div>
+                        
+                        <div class="row4">
+                            <input type="button" class="btn" name="btn_3" value="3" onclick="displaynum(btn_3.value)">
+                            <input type="button" class="btn" name="btn_2" value="2" onclick="displaynum(btn_2.value)">
+                            <input type="button" class="btn" name="btn_1" value="1" onclick="displaynum(btn_1.value)">
+                            <input type="button" class="btn_operator" name="btn_sub" value="-" onclick="displaynum(btn_sub.value)"> <br>
+                        </div>
+                        
+                        <div class="row5">
+                            <input type="button" class="btn" name="btn_0" value="0" onclick="displaynum(btn_0.value)">
+                            <input type="button" class="btn" name="btn_dot" value="." onclick="displaynum(btn_dot.value)">
+                            <input type="button" class="btn_operator" name="btn_equal" value="=" onclick="result.value=eval (result.value)">
+                            <input type="button" class="btn_operator" name="btn_add" value="+" onclick="displaynum(btn_add.value)"> <br>
+                        </div>
                     </div>
-
-                    <div class="row2">
-                        <input type="button" class="btn" name="btn9" value="9" onclick="displaynum(btn9.value)">
-                        <input type="button" class="btn" name="btn8" value="8" onclick="displaynum(btn8.value)">
-                        <input type="button" class="btn" name="btn7" value="7" onclick="displaynum(btn7.value)">
-                        <input type="button" class="btnOperator" name="btnDiv" value="/" onclick="displaynum(btnDiv.value)"> <br>
-                    </div>
-
-                    <div class="row3">
-                        <input type="button" class="btn" name="btn6" value="6" onclick="displaynum(btn6.value)">
-                        <input type="button" class="btn" name="btn5" value="5" onclick="displaynum(btn5.value)">
-                        <input type="button" class="btn" name="btn4" value="4" onclick="displaynum(btn4.value)">
-                        <input type="button" class="btnOperator" name="btnMulti" value="*" onclick="displaynum(btnMulti.value)"> <br>
-                    </div>
-
-                    <div class="row4">
-                        <input type="button" class="btn" name="btn3" value="3" onclick="displaynum(btn3.value)">
-                        <input type="button" class="btn" name="btn2" value="2" onclick="displaynum(btn2.value)">
-                        <input type="button" class="btn" name="btn1" value="1" onclick="displaynum(btn1.value)">
-                        <input type="button" class="btnOperator" name="btnSub" value="-" onclick="displaynum(btnSub.value)"> <br>
-                    </div>
-
-                    <div class="row5">
-                        <input type="button" class="btn" name="btn0" value="0" onclick="displaynum(btn0.value)">
-                        <input type="button" class="btn" name="btnDot" value="." onclick="displaynum(btnDot.value)">
-                        <input type="button" class="btnOperator" name="btnEqual" value="=" onclick="result.value=eval (result.value)">
-                        <input type="button" class="btnOperator" name="btnAdd" value="+" onclick="displaynum(btnAdd.value)"> <br>
-                    </div>
-
                 </section>
             </div>
-
+            
         </form>
-    </div>
-    
+    </section>
 </body>
+
+<footer>
+    <p>developed by Ivan</p>
+</footer>
 
 <script src="script.js"></script>
 
